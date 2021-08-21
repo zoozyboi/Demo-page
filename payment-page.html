@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <title>Checkout Using Paypal</title>
+    
+
+</head>
+<body>
+    <main id="cart-main">
+        <h1 class="title">Sample Shopping Cart</h1>
+        <div class="container">
+            <div class="col_1">
+                <div class="checkbox">
+                    <input  type="checkbox">
+                </div>
+                <img src="./images/shoes.webp" alt="">
+                <div class="details">
+                    <h2>FlyKnit</h2>
+                    <span id="types">Men's Shoes</span>
+                    <input type="text" value="1">
+                    <span id="del">Delete from Cart</span>
+                </div>
+                <div class="price">
+                    <h3>Price</h3>
+                    <h3>$99.90</h3>
+                </div>
+
+            </div>
+            <div class="col_2">
+                <h1 class="title">Price Details</h1>
+
+                <div class="total_container">
+                    <div class="total_details">
+                        <h3>Product(1 item):</h3>
+                        <h3>Delivery Charges:</h3>
+                        <h3>Amount Payable:</h3>
+                     </div>
+                     <div class="total">
+                         <h3 id="amount">$99.90</h3>
+                         <h3>Free</h3>
+                         <h3 id="amount">$99.90</h3>
+                     </div>
+                </div>
+               <div id="paypal-payment-button"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab3kGsr3BZw1Kc1BY4Qj47jGDoAry70x_Q29jZQZ2VgG5IMuPTW3VoJiHsw8zkiaCiTxCIHssMFfdFnZ&disable-funding=credit,card"></script>
+    <script src="script.js"></script>
+</body>
+</html>
